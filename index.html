@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+<div class="div1">
+    <div class="div2">
+    <form>
+<input type="text" id="calc"  name="input"  >
+<br><br>
+
+    <input type="button" value="AC"  class="white" onclick="input.value =' '">
+    <input type="button" value="+/-"class="white" onclick="input.value +='+/-'">
+    <input type="button" value="%"class="white"  onclick="input.value +='%'">
+    <input type="button" value="/" class="orange" onclick="input.value +='/'">
+    <br><br>
+    <input type="button" value="7" class="grey" onclick="input.value +='7'">
+    <input type="button" value="8" class="grey" onclick="input.value +='8'">
+    <input type="button" value="9" class="grey" onclick="input.value +='9'">
+    <input type="button" value="x" class="orange" onclick="input.value +='*'">
+    <br><br>
+    <input type="button" value="4" class="grey"onclick="input.value +='4'">
+    <input type="button" value="5" class="grey" onclick="input.value +='5'">
+    <input type="button" value="6" class="grey" onclick="input.value +='6'">
+    <input type="button" value="-" class="orange" onclick="input.value +='-'">
+    <br><br>
+    <input type="button" value="1" class="grey"onclick="input.value +='1'">
+    <input type="button" value="2" class="grey"onclick="input.value +='2'">
+    <input type="button" value="3" class="grey"onclick="input.value +='3'">
+    <input type="button" value="+" class="orange" onclick="input.value +='+'">
+    <br><br>
+    <input type="button" value="0"class="grey1" onclick="input.value +='0'">
+    <input type="button" value="."class="grey" onclick="input.value +='.'">
+   <input type="button" value="=" class="orange" onclick="input.value = eval(input.value)">
+    <br><br>
+
+   </form>
+</div>
+</div>
+
+
+
+
+
+
+</body>
+</html>
+
+
+<style>
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+
+
+
+.div1{
+    background-color: rgb(255, 255, 255);
+    height: 100vh;
+    justify-content: center;
+    display: flex;
+    align-items: center;
+    
+}
+
+input{
+    height: 60px;
+    width: 60px;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+    border: none;
+    font-size: 28px;
+    background-color: white;
+    border-radius: 30px;
+    margin-left: 20px;
+   
+}
+#calc{
+    width: 250px;
+    height: 40px;
+    border: none;
+    background-color: black;
+    color: white;
+    font-size: 40px;
+    text-align: end;
+}
+.div2{
+    background-color: black;
+    width: 22%;
+    padding-left: 30px;
+    padding-top: 20px;
+    border-radius: 30px;
+}
+.orange{
+    background-color: orange;
+    margin-left: 10px;
+    color: white;
+}
+#clear{
+    width: 250px;
+    height: 40px;
+    border: none;
+}
+.grey{
+    background-color: rgb(73, 69, 69);
+    color: white;
+    margin-left:10px ;
+}
+.grey1{
+    background-color:rgb(73, 69, 69) ;
+    color: white; 
+    width: 125px;
+    padding-right: 60px;
+    margin-left: 15px;
+}
+.white{
+    margin-left: 10px;
+}
+
+
+</style>
